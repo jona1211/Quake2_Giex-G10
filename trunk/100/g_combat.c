@@ -1104,7 +1104,7 @@ int T_Damage (edict_t *targ, edict_t *inflictor, edict_t *attacker, vec3_t dir, 
 		targ->health -= take;
 	}
 	if ( (targ->health > 0) && ((take != 0) || (take + asave > 0)) ) {
-		addExp(attacker, targ, take + asave); //Also give exp for killing armor
+		addExp(attacker, targ, (take + asave) * 5); //Also give exp for killing armor
 	}
 	if (take != 0) {
 		if ((targ->svflags & SVF_MONSTER) || (client))
