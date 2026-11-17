@@ -1638,7 +1638,7 @@ iteminfo_t *getItemInfo(int num) {
 	}
 	return iteminfo;
 }
-#define GIEX_NUMITEMS 214
+#define GIEX_NUMITEMS 224
 
 void giexitem_make_touchable (edict_t *item);
 void giexitem_make_touchable2 (edict_t *item);
