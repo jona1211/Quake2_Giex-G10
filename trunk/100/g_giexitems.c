@@ -1538,6 +1538,97 @@ iteminfo_t *getItemInfo(int num) {
 			{0, 0, 0, 85, 0, 0, 0, 0}, //classreq
 //armor, +armor, absorb, +absorb, regen, +regen
 			200.0, 8.0, 0.35, 0.019, 2.5, 0.7, 0.0, 0.0, 0.0, 0.0},
+	// === ÍTEMS CUSTOM MASIVOS ===
+
+// 215: Armadura N7 Vanguard (Soldier/Tank) - Regeneración y absorción extrema
+{"N7 Vanguard Armor", GIEX_ITEM_ARMOR, NULL, 0, "models/items/armor/body/tris.md2", 1, {44,22,23,31,0}, {50,50,50,50,0}, 4, /*215*/ \
+	{27,	31,		23,		44,		24,		32,		28,		0,		0,		0}, //putypes
+	{100,	100,	100,	100,	100,	100,	100,	0,		0,		0}, //pumaxlvl
+	{1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0}, //pucost
+	{90, 100, 0, 0, 0, 0, 0, 0}, //classreq
+//armor, +armor, absorb, +absorb, regen, +regen
+	1500.0, 50.0, 0.95, 0.05, 20.0, 15.0, 0.0, 0.0, 0.0, 0.0},
+
+// 216: Terra Blade (Wand para Mage/Cleric) - Velocidad de disparo y daño absurdo
+{"Terra Blade", GIEX_ITEM_WEAPON | GIEX_ITEM_MAGE | GIEX_ITEM_CLERIC, NULL, CI_W_BLASTER, "models/weapons/g_blast/tris.md2", 1, {29,33,47,0,0}, {100,100,100,0,0}, 4, /*216*/\
+	{29,	25,		33,		47,		51,		52,		61,		0,		0,		0}, //putypes
+	{100,	100,	100,	100,	100,	100,	100,	0,		0,		0}, //pumaxlvl
+	{1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0}, //pucost
+	{0, 0, 80, 80, 0, 0, 0, 0}, //classreq
+//dmg, +dmg, firerate, pierce, +pierce, speed, +speed, ammouse, +ammouse
+	500.0, 25.0, 5.0, 0.9, 0.1, 2000.0, 50.0, 1.0, 0.0, 0.0},
+
+// 217: Ping of Death (Soldier Hyperblaster) - Saturación de red
+{"Ping of Death", GIEX_ITEM_WEAPON | GIEX_ITEM_SOLDIER, NULL, CI_W_HYPERBLASTER, "models/weapons/g_hyperb/tris.md2", 1, {2,7,0,0,0}, {50,50,0,0,0}, 3,/*217*/\
+	{1,		7,		2,		72,		59,		75,		0,		0,		0,		0}, //putypes
+	{100,	100,	100,	100,	100,	100,	0,		0,		0,		0}, //pumaxlvl
+	{1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0}, //pucost
+	{80, 0, 0, 0, 0, 0, 0, 0}, //classreq
+//dmg, +dmg, boltfiredelay (1-3), notused, notused, speed, +speed, ammouse, +ammouse
+	350.0, 15.0, 6.0, 0.0, 0.0, 2500.0, 50.0, 1.0, 0.0, 0.0},
+
+// 218: 6kg Dumbbell (Vampire Melee Arm) - Impacto físico devastador
+{"6kg Dumbbell", GIEX_ITEM_WEAPON | GIEX_ITEM_VAMPIRE, NULL, CI_W_ARM, "models/objects/gibs/arm/tris.md2", 1, {34,26,29,0,0}, {50,50,50,0,0}, 3,/*218*/\
+	{1,		34,		26,		29,		0,		0,		0,		0,		0,		0}, //putypes
+	{100,	100,	100,	100,	0,		0,		0,		0,		0,		0}, //pumaxlvl
+	{1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0}, //pucost
+	{0, 0, 0, 0, 80, 0, 0, 0}, //classreq
+//dmg, +dmg, firerate, recycle, range, count, hspread, vspread, kick, magic_cost
+	300.0, 15.0, 5.0, 1.0, 600.0, 8.0, 100.0, 100.0, -150.0, 5.0},
+
+// 219: Arcangel's Aegis (Cleric Helmet) - Defensa divina inquebrantable
+{"Arcangel's Aegis", GIEX_ITEM_HELMET, NULL, 0, "models/monsters/commandr/head/tris.md2", 1, {46,36,37,38,0}, {50,25,25,25,0}, 3, /*219*/ \
+	{30,	31,		46,		36,		37,		38,		0,		0,		0,		0}, //putypes
+	{100,	100,	100,	100,	100,	100,	0,		0,		0,		0}, //pumaxlvl
+	{1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0}, //pucost
+	{0, 0, 90, 0, 0, 0, 0, 0}, //classreq
+//armor, +armor
+	800.0, 25.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+
+// 220: Bongo's Fury (Tank BFG) - Barrido masivo 
+{"Bongo's Fury", GIEX_ITEM_WEAPON | GIEX_ITEM_TANK, NULL, CI_W_BFG, "models/weapons/g_bfg/tris.md2", 1, {7,0,0,0,0}, {100,0,0,0,0}, 4, /*220*/\
+	{1,		7,		0,		0,		0,		0,		0,		0,		0,		0}, //putypes
+	{100,	100,	0,		0,		0,		0,		0,		0,		0,		0}, //pumaxlvl
+	{1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0}, //pucost
+	{0, 100, 0, 0, 0, 0, 0, 0}, //classreq
+//dmg, *dmg_lvl, +dmg_charge, speed, +speed, -speed_charge, *ammouse
+	800.0, 0.1,  50.0, 800.0, 60.0, 50.0, 1.0, 5.0, 0.0, 0.0},
+
+// 221: The Active Directory (Backpack, Tank/Cleric) - Protección de red perimetral
+{"The Active Directory", GIEX_ITEM_BACKPACK, NULL, 0, "models/items/enviro/tris.md2", 1, {41,36,37,38,39}, {50,50,50,50,50}, 4, /*221*/ \
+	{27,	41,		36,		37,		38,		39,		0,		0,		0,		0}, //putypes
+	{100,	100,	100,	100,	100,	100,	0,		0,		0,		0}, //pumaxlvl
+	{1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0}, //pucost
+	{0, 50, 50, 50, 0, 0, 0, 0}, //classreq
+//armor, +armor, absorb, +absorb, regen, +regen
+	300.0, 15.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+
+// 222: UTP Cat6 Whip (Mage Staff) - Daño puro de conectividad
+{"UTP Cat6 Whip", GIEX_ITEM_WEAPON | GIEX_ITEM_MAGE, NULL, CI_W_BLASTER, "models/weapons/g_blast/tris.md2", 1, {81,25,50,67,68}, {50,50,50,50,50}, 4, /*222*/\
+	{29,	25,		50,		67,		68,		33,		81,		0,		0,		0}, //putypes
+	{100,	100,	100,	100,	100,	100,	100,	0,		0,		0}, //pumaxlvl
+	{1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0}, //pucost
+	{0, 0, 0, 90, 0, 0, 0, 0}, //classreq
+//dmg, +dmg, firerate, pierce, +pierce, speed, +speed, ammouse, +ammouse
+	450.0, 20.0, 8.0, 0.9, 0.05, 2500.0, 10.0, 5.0, 0.0, 0.0},
+
+// 223: Zenith (Soldier Chaingun) - Ráfaga definitiva
+{"Zenith", GIEX_ITEM_WEAPON | GIEX_ITEM_SOLDIER, NULL, CI_W_CHAINGUN, "models/weapons/g_chain/tris.md2", 1, {5,0,0,0,0}, {100,0,0,0,0}, 4,/*223*/\
+	{1,		5,		0,		0,		0,		0,		0,		0,		0,		0}, //putypes
+	{100,	100,	0,		0,		0,		0,		0,		0,		0,		0}, //pumaxlvl
+	{1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0}, //pucost
+	{90, 0, 0, 0, 0, 0, 0, 0}, //classreq
+//dmg, +dmg, notused, numshots, spread
+	150.0, 5.0, 0.0, 15.0, 150.0, 0.0, 0.0, 0.0, 0.0, 0.0},
+
+// 224: ThinkPad Plating (Tank/Soldier Armor) - Indestructible como un Lenovo
+{"ThinkPad Plating", GIEX_ITEM_ARMOR, NULL, 0, "models/items/armor/body/tris.md2", 1, {44,22,23,31,0}, {50,50,50,50,0}, 4, /*224*/ \
+	{27,	31,		23,		44,		0,		0,		0,		0,		0,		0}, //putypes
+	{100,	100,	100,	100,	0,		0,		0,		0,		0,		0}, //pumaxlvl
+	{1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0,	1.0}, //pucost
+	{80, 80, 0, 0, 0, 0, 0, 0}, //classreq
+//armor, +armor, absorb, +absorb, regen, +regen
+	2000.0, 75.0, 0.98, 0.01, 50.0, 20.0, 0.0, 0.0, 0.0, 0.0},
   	};
 	iteminfo_t *iteminfo = &(info[num]);
 	if (num < 0)
